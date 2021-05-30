@@ -1,13 +1,10 @@
+import viewHome from '../views/home.html';
 
 export default () => {
-    const homeView = `
-        <h1>Hello World</h1>
-        <p>Vanila SPA with JS</p>
-    `;
-    
+   
     let template = document.createElement('div');
     template.classList = 'text-danger';
-    template.innerHTML = homeView;
+    template.innerHTML = viewHome;
 
     return template;
 }
