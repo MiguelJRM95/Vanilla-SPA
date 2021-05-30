@@ -6,6 +6,7 @@ export default () => {
     `;
     
     let template = document.createElement('div');
+    template.classList = 'text-danger';
     template.innerHTML = homeView;
 
     return template;
