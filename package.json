@@ -1,5 +1,5 @@
 {
-  "name": "VanillaSPA",
+  "name": "vanilla_spa",
   "version": "1.0.0",
   "description": "",
   "main": "webpack.config.js",
@@ -13,7 +13,9 @@
     "webpack-cli": "^4.7.0",
     "webpack-dev-server": "^3.11.2"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "bootstrap": "^5.0.1"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
