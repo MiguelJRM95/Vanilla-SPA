@@ -7,6 +7,14 @@ module.exports = {
         filename: 'app.js'
     },
     mode: 'development',
+    module: {
+        rules: [
+            {
+                test: /\.css$/i,
+                use: ['style-loader','css-loader']
+            }
+        ]
+    },
     plugins: [
         new HTMLWebpackPlugin({
             template: './src/index.html'
