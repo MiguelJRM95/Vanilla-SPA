@@ -1,4 +1,4 @@
-import Home from '../controllers/index.controller';
+import Home from '../controllers/home.controller';
 let content = document.getElementById('root')
 const router = (route) =>{
     if(content.hasChildNodes){
