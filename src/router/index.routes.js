@@ -1,18 +1,18 @@
-import Home from '../controllers/home.controller';
+import {pages} from '../controllers/index';
 let content = document.getElementById('root')
-const router = (route) =>{
+const router = async (route) =>{
     if(content.hasChildNodes){
         content.innerHTML = '';
     }
     switch (route) {
         case '#/':
-            return content.appendChild(Home());
+            return content.appendChild(pages.home());
         case '#/products':
-            return console.log('products');
+            return content.appendChild(pages.products());
         case '#/posts':
-            return console.log('posts');
+            return content.appendChild(await pages.posts());
         default:
-            return console.log('404 route doesn\'t exists');
+            return content.appendChild(pages.notFound404());
     }
 }
 
